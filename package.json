@@ -1,0 +1,13 @@
+{
+  "name": "mobile-bridge-plugin",
+  "version": "0.1.0",
+  "type": "module",
+  "private": false,
+  "description": "Forward completed OpenClaw assistant replies to a configurable mobile/web bridge endpoint.",
+  "main": "./index.mjs",
+  "openclaw": {
+    "extensions": [
+      "./index.mjs"
+    ]
+  }
+}

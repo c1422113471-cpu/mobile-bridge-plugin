@@ -1,0 +1,62 @@
+{
+  "id": "mobile-bridge-plugin",
+  "name": "Mobile Bridge Plugin",
+  "description": "Forward completed assistant replies to a configurable mobile/web notification bridge.",
+  "version": "0.1.0",
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "gatewayUrl": {
+        "type": "string",
+        "title": "Gateway URL",
+        "description": "HTTP endpoint that receives forwarded reply events.",
+        "default": "http://127.0.0.1:8787/_openclaw/notify/events"
+      },
+      "gatewayToken": {
+        "type": "string",
+        "title": "Gateway token",
+        "description": "Optional bearer token for the mobile/web bridge receiver.",
+        "default": ""
+      },
+      "targetUrl": {
+        "type": "string",
+        "title": "Target URL",
+        "description": "Optional UI path/URL included in forwarded events.",
+        "default": "/ui/"
+      },
+      "eventType": {
+        "type": "string",
+        "title": "Event type",
+        "description": "Event type sent to the receiver.",
+        "default": "reply_finished"
+      },
+      "maxBodyChars": {
+        "type": "integer",
+        "title": "Max body chars",
+        "description": "Maximum short body length before truncation.",
+        "minimum": 32,
+        "maximum": 2000,
+        "default": 160
+      },
+      "skipSubagents": {
+        "type": "boolean",
+        "title": "Skip sub-agents",
+        "description": "Do not forward assistant replies from sub-agent sessions.",
+        "default": true
+      },
+      "skipHeartbeat": {
+        "type": "boolean",
+        "title": "Skip heartbeat replies",
+        "description": "Do not forward HEARTBEAT_OK messages.",
+        "default": true
+      },
+      "debugLogPath": {
+        "type": "string",
+        "title": "Debug log path",
+        "description": "Optional local log file path. Leave empty to disable file logging.",
+        "default": ""
+      }
+    }
+  }
+}
