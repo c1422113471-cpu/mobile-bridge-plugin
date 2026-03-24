@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "type": "module",
   "private": false,
-  "description": "Forward completed OpenClaw assistant replies to a configurable mobile/web bridge endpoint.",
+  "description": "OpenClaw手机端消息推送方案：将已完成的助手回复转发到可配置的移动端/Web桥接端点。",
   "main": "./index.mjs",
   "openclaw": {
     "extensions": [

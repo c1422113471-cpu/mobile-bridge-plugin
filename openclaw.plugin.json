@@ -1,6 +1,6 @@
 {
   "id": "mobile-bridge-plugin",
-  "name": "Mobile Bridge Plugin",
+  "name": "OpenClaw手机端消息推送方案",
   "description": "Forward completed assistant replies to a configurable mobile/web notification bridge.",
   "version": "0.1.0",
   "configSchema": {

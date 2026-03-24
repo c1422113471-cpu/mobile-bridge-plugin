@@ -1,4 +1,4 @@
-# Mobile Bridge Plugin
+# OpenClaw手机端消息推送方案
 
 Forward completed OpenClaw assistant replies to an external mobile/web bridge endpoint.
 

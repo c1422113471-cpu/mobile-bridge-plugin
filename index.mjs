@@ -138,7 +138,7 @@ function handleBeforeMessageWrite(event, ctx, api, config) {
 
 export default {
   id: 'mobile-bridge-plugin',
-  name: 'Mobile Bridge Plugin',
+  name: 'OpenClaw手机端消息推送方案',
   version: '0.1.0',
   register(api) {
     const config = getPluginConfig(api);
